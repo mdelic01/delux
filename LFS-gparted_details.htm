@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en-US' lang='en-US'>
+<head>
+<meta http-equiv='Content-Type' content='text/html;charset=utf-8' />
+<title>GParted Details</title>
+</head>
+<body>
+<p>GParted 0.25.0 --enable-libparted-dmraid --enable-online-resize</p>
+<p>Libparted 3.2</p>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b>Create Primary Partition #1 (ext2, 200.00 MiB) on /dev/sda</b>&nbsp;&nbsp;00:00:02&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+create empty partition&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>path: /dev/sda1 (partition)<br />start: 2048<br />end: 411647<br />size: 409600 (200.00 MiB)</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+clear old file system signatures in /dev/sda1&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+write 512.00 KiB of zeros at byte offset 0&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+write 4.00 KiB of zeros at byte offset 67108864&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+write 512.00 KiB of zeros at byte offset 209190912&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+write 4.00 KiB of zeros at byte offset 209649664&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+write 8.00 KiB of zeros at byte offset 209707008&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+flush operating system cache of /dev/sda&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+set partition type on /dev/sda1&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>new partition type: ext2</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+create new ext2 file system&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b><i>mkfs.ext2 -F -L &quot;&quot; /dev/sda1</i></b>&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>Creating filesystem with 204800 1k blocks and 51200 inodes<br />Filesystem UUID: 60d5c88d-89dc-4a51-bf4d-221769e9e3b2<br />Superblock backups stored on blocks: <br />	8193, 24577, 40961, 57345, 73729<br /><br />Allocating group tables: done                            <br />Writing inode tables: done                            <br />Writing superblocks and filesystem accounting information: done <br /><br /></i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>mke2fs 1.42.13 (17-May-2015)<br /></i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>========================================</p>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b>Create Primary Partition #2 (ext4, 19.80 GiB) on /dev/sda</b>&nbsp;&nbsp;00:00:02&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+create empty partition&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>path: /dev/sda2 (partition)<br />start: 411648<br />end: 41943039<br />size: 41531392 (19.80 GiB)</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+clear old file system signatures in /dev/sda2&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+write 512.00 KiB of zeros at byte offset 0&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+write 4.00 KiB of zeros at byte offset 67108864&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+write 512.00 KiB of zeros at byte offset 21263548416&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+write 4.00 KiB of zeros at byte offset 21264007168&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+write 8.00 KiB of zeros at byte offset 21264064512&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+flush operating system cache of /dev/sda&nbsp;&nbsp;00:00:00&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+set partition type on /dev/sda2&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>new partition type: ext4</i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+create new ext4 file system&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<b><i>mkfs.ext4 -F -L &quot;&quot; /dev/sda2</i></b>&nbsp;&nbsp;00:00:01&nbsp;&nbsp;&nbsp;&nbsp;( SUCCESS )
+</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>Creating filesystem with 5191424 4k blocks and 1299984 inodes<br />Filesystem UUID: 180f92be-6f60-454d-977f-32be7d5f5f3d<br />Superblock backups stored on blocks: <br />	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, <br />	4096000<br /><br />Allocating group tables: done                            <br />Writing inode tables: done                            <br />Creating journal (32768 blocks): done<br />Writing superblocks and filesystem accounting information: done   <br /><br /></i>
+</td>
+</tr>
+</table>
+<table border='0'>
+<tr>
+<td colspan='2'>
+<i>mke2fs 1.42.13 (17-May-2015)<br /></i>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>========================================</p>
+</body>
+</html>
